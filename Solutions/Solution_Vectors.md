@@ -209,4 +209,3 @@ vec <- 10:20
 idx <- which(vec > 15)
 vec[idx]
 ```
-
