@@ -159,21 +159,20 @@ vec[2] <- "hi"
 
 Különböző hosszúságú vektorok esetén a rövidebb vektort kiegészíti az R a hosszabb vektor hosszára. Amennyiben ez nem többszöröse, akkor warning-ot dob.
 
-18. Ismételd meg egy vektor elemeit 10-szer. (pl.: 1:3, 1,2,3,1,2,3,1,2,3, ...)
+### 18. Ismételd meg egy vektor elemeit 10-szer. (pl.: 1:3, 1,2,3,1,2,3,1,2,3, ...)
 
 ```{r}
 vec <- 1:3
 rep(vec, times = 10)
 ```
 
-19. Ismételd meg egy vektor elemenként 5-ször. (pl.: 1:3, 1,1,1,1,1,2,2,2,2,2,...)
+### 19. Ismételd meg egy vektor elemenként 5-ször. (pl.: 1:3, 1,1,1,1,1,2,2,2,2,2,...)
 
 ```{r}
 rep(vec, each = 10)
 ```
 
-
-20. Szerepel-e a "setosa" az iris$Species vektorban?
+### 20. Szerepel-e a "setosa" az iris$Species vektorban?
 
 `%in%` operátor: szerepelnek-e egy vektor értékei egy másik vektorban
 
@@ -181,7 +180,7 @@ rep(vec, each = 10)
 "setosa" %in% iris$Species
 ```
 
-21. Generálj egy 1 elemű logikai vektort, ami `TRUE` értékkel rendelkezzen, ha az iris$Sepal.Length minden értéke kisebb mint 10, 
+### 21. Generálj egy 1 elemű logikai vektort, ami `TRUE` értékkel rendelkezzen, ha az iris$Sepal.Length minden értéke kisebb mint 10, 
 egyéb esetben `FALSE` értéke legyen.
 
 `all`: TRUE, ha egy logikai vektor minden eleme igaz
@@ -190,7 +189,7 @@ egyéb esetben `FALSE` értéke legyen.
 all(iris$Sepal.Length < 10)
 ```
 
-22. Írj egy függvényt `any_greater_than_5` néven, ami `TRUE` értéket ad vissza, ha a vektor tartalmaz legalább egy 5-nél nagyobb értéket, 
+### 22. Írj egy függvényt `any_greater_than_5` néven, ami `TRUE` értéket ad vissza, ha a vektor tartalmaz legalább egy 5-nél nagyobb értéket, 
 egyéb esetben `FALSE` értéket.
 
 `any`: TRUE, ha egy logikai vektor legalább egyik eleme igaz
@@ -201,8 +200,7 @@ any_greater_than_5 <- function(x) {
 }
 ```
 
-23. A 10:20 vektor melyik indexű elemei nagyobbak 15-nél? Listázd ki az elemeket
-
+### 23. A 10:20 vektor melyik indexű elemei nagyobbak 15-nél? Listázd ki az elemeket
 
 ```{r}
 vec <- 10:20
